@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- ⛔ СОБРАННАЯ СТРАНИЦА. Правки вносить в st916_parol.src\proverit-parol.html и пересобирать:
+     python _site_build.py out\st916_parol.src
+     Здесь base64 шрифтов и картинок — ручная правка утонет и пропадёт. -->
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверить пароль — надёжный пароль</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f6f8'/%3E%3Cpath d='M20 28v-6a12 12 0 0 1 24 0v6' fill='none' stroke='%2312141a' stroke-width='5'/%3E%3Crect x='16' y='28' width='32' height='24' rx='3' fill='%232f45cf'/%3E%3Ccircle cx='32' cy='38' r='3.5' fill='%23f5f6f8'/%3E%3Crect x='30' y='40' width='4' height='7' fill='%23f5f6f8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="проверить пароль">
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="index.html">Надёжный <span>пароль</span></a>
+    <nav data-menu>
+      <a href="index.html">Главная</a>
+      <a href="kak-lomayut.html">Как это делают</a>
+      <a href="proverit-sebya.html">Проверить себя</a>
+      <a href="proverit-parol.html" aria-current="page">Проверить пароль</a>
+      <a href="chto-delat.html">Что делать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" data-hero="Э5">
+    <p class="kicker">Раздел 03 · главный инструмент</p>
+    <h1>Посчитайте свою комбинацию</h1>
+    <p class="lead">Наберите пароль, похожий на&nbsp;тот, которым вы&nbsp;пользуетесь, — не
+      настоящий, а&nbsp;той же&nbsp;длины и&nbsp;того же&nbsp;устройства. Тут же&nbsp;увидите число вариантов
+      и&nbsp;время полного перебора. Считает страница прямо в&nbsp;этом окне браузера.</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С3" data-tool="И2">
+    <h3>Секундомер взлома</h3>
+    <div class="calc">
+      <label for="pwd">Наберите пароль — не&nbsp;настоящий, а&nbsp;похожий на&nbsp;него</label>
+      <input type="text" id="pwd" placeholder="например, Dima2008" autocomplete="off"
+             spellcheck="false">
+      <p class="note">Расчёт идёт прямо в&nbsp;этом окне браузера. Набранное не&nbsp;сохраняется,
+        не&nbsp;логируется и&nbsp;никуда не&nbsp;передаётся — ни&nbsp;на&nbsp;сервер, ни&nbsp;в&nbsp;память страницы
+        после того, как вы&nbsp;её&nbsp;закроете.</p>
+
+      <div class="result"></div>
+
+      <p class="formula">N&nbsp;— алфавит (классы символов, встреченные в&nbsp;наборе) · L&nbsp;—
+        длина · C&nbsp;= N^L&nbsp;· время = C&nbsp;÷ 220 000 000 000 (вариантов в&nbsp;секунду)</p>
+      <p class="src">Источник скорости: возможности одной современной видеокарты на
+        быстром алгоритме хеширования, по&nbsp;данным исследования «Лаборатории
+        Касперского», 2026 год. Адрес: www.kaspersky.ru/blog/passwords-hacking-research-2026/41817/</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С10">
+    <div class="scheme">
+      <div class="svgbox">
+        <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgt3 svgd3">
+          <title id="svgt3">Каждый добавленный знак умножает число вариантов на&nbsp;весь алфавит</title>
+          <desc id="svgd3">Цепочка из&nbsp;четырёх позиций пароля, каждая связана стрелкой
+            «умножить на&nbsp;26» со&nbsp;следующей; в&nbsp;конце — итоговое число вариантов.</desc>
+          <style>.mono{font-family:ui-monospace,Consolas,monospace}
+                 .ln{font-family:Inter,'Segoe UI',sans-serif}</style>
+          <g>
+            <circle cx="70" cy="120" r="34" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+            <text x="70" y="127" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="var(--ink)">1</text>
+            <path d="M108 120 h70" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="112" y="108" class="mono" font-size="12" fill="var(--accent)">×26</text>
+
+            <circle cx="240" cy="120" r="34" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+            <text x="240" y="127" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="var(--ink)">2</text>
+            <path d="M278 120 h70" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="282" y="108" class="mono" font-size="12" fill="var(--accent)">×26</text>
+
+            <circle cx="410" cy="120" r="34" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+            <text x="410" y="127" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="var(--ink)">3</text>
+            <path d="M448 120 h60" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="452" y="108" class="mono" font-size="12" fill="var(--accent)">×26</text>
+            <text x="500" y="127" text-anchor="middle" class="mono" font-size="20" fill="var(--dim)">…</text>
+            <path d="M525 120 h55" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="528" y="108" class="mono" font-size="12" fill="var(--accent)">×26</text>
+
+            <circle cx="640" cy="120" r="34" fill="var(--ink)"/>
+            <text x="640" y="127" text-anchor="middle" class="mono" font-size="16" font-weight="700" fill="#fff">L</text>
+            <path d="M678 120 h50" stroke="var(--accent)" stroke-width="2.5" marker-end="url(#arr3)"/>
+
+            <rect x="740" y="70" width="150" height="100" fill="var(--accent)" opacity=".1"/>
+            <text x="815" y="112" text-anchor="middle" class="mono" font-size="15" font-weight="700" fill="var(--accent)">26^L</text>
+            <text x="815" y="136" text-anchor="middle" class="ln" font-size="11.5" fill="var(--dim)">вариантов —</text>
+            <text x="815" y="152" text-anchor="middle" class="ln" font-size="11.5" fill="var(--dim)">не&nbsp;сумма, а&nbsp;степень</text>
+          </g>
+          <text x="60" y="210" class="ln" font-size="13" fill="var(--ink)" font-weight="700">8 знаков → 2,09×10¹¹</text>
+          <text x="60" y="232" class="ln" font-size="13" fill="var(--accent)" font-weight="700">16 знаков → 4,36×10²²</text>
+          <defs>
+            <marker id="arr3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0 0 L6 3 L0 6 z" fill="var(--accent)"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <p class="cap"><b>Каждый добавленный знак умножает число вариантов на&nbsp;весь
+        алфавит целиком, а&nbsp;не&nbsp;прибавляет к&nbsp;нему.</b> Поэтому шестнадцать строчных
+        букв дают не&nbsp;в&nbsp;два раза больше восьми, а&nbsp;в&nbsp;209 миллиардов раз больше —
+        ровно на&nbsp;столько знаков умножился счёт.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С1">
+    <div class="g">
+      <div class="c5">
+        <p class="kicker">Почему решает длина</p>
+        <h2>Замена символа умножает один раз, знак — при каждом шаге</h2>
+      </div>
+      <div class="c7">
+        <p>Расширение набора символов — цифры, заглавные буквы, знаки препинания —
+          умножает число вариантов на&nbsp;постоянную величину один раз. Каждый добавленный
+          знак умножает его на&nbsp;весь набор целиком, и&nbsp;с&nbsp;этим приростом не&nbsp;сравнится ни
+          одна замена внутри короткой комбинации. Отсюда и&nbsp;разница из&nbsp;заголовка: пароль,
+          отличающийся от&nbsp;другого только длиной, отличается от&nbsp;него по&nbsp;времени
+          подбора в&nbsp;миллиарды раз.</p>
+        <p class="dim">Что делать с&nbsp;этим расчётом на&nbsp;практике — на&nbsp;последней странице:
+          <a href="chto-delat.html">чек-лист из&nbsp;четырёх шагов</a> со&nbsp;счётчиком
+          выполненного.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Формула и&nbsp;принятая скорость перебора приведены по&nbsp;исследованию «Лаборатории
+      Касперского», 2026 год; соотношение длины и&nbsp;замены — по&nbsp;работе Т. М. Татарниковой.</p>
+    <p class="src-list">Т. М. Татарникова · «Лаборатория Касперского», 2026</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

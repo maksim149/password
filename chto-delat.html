@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- ⛔ СОБРАННАЯ СТРАНИЦА. Правки вносить в st916_parol.src\chto-delat.html и пересобирать:
+     python _site_build.py out\st916_parol.src
+     Здесь base64 шрифтов и картинок — ручная правка утонет и пропадёт. -->
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Что делать — надёжный пароль</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f6f8'/%3E%3Cpath d='M20 28v-6a12 12 0 0 1 24 0v6' fill='none' stroke='%2312141a' stroke-width='5'/%3E%3Crect x='16' y='28' width='32' height='24' rx='3' fill='%232f45cf'/%3E%3Ccircle cx='32' cy='38' r='3.5' fill='%23f5f6f8'/%3E%3Crect x='30' y='40' width='4' height='7' fill='%23f5f6f8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="что делать">
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="index.html">Надёжный <span>пароль</span></a>
+    <nav data-menu>
+      <a href="index.html">Главная</a>
+      <a href="kak-lomayut.html">Как это делают</a>
+      <a href="proverit-sebya.html">Проверить себя</a>
+      <a href="proverit-parol.html">Проверить пароль</a>
+      <a href="chto-delat.html" aria-current="page">Что делать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" data-hero="Э5">
+    <p class="kicker">Раздел 04</p>
+    <h1>Порядок действий на&nbsp;сегодняшний вечер</h1>
+    <p class="lead">Отметьте то, что уже сделано, — счётчик покажет, сколько шагов
+      осталось. Все четыре пункта разобраны на&nbsp;предыдущих страницах: это и&nbsp;есть
+      практический вывод из&nbsp;расчёта времени подбора.</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С6" data-tool="И6">
+    <h3>Чек-лист входа</h3>
+    <div class="check">
+      <label><input type="checkbox">
+        <span><b>Отдельный пароль для каждого важного сервиса.</b>
+        <span class="why">Утечка на&nbsp;одном сайте не&nbsp;откроет доступ к&nbsp;остальным:
+          повторённый пароль теряет стойкость вместе с&nbsp;самым слабым сайтом, где он
+          заведён.</span></span>
+      </label>
+      <label><input type="checkbox">
+        <span><b>Второй шаг входа — код из&nbsp;сообщения или из&nbsp;приложения.</b>
+        <span class="why">Знания пароля становится недостаточно: войти нельзя без
+          устройства владельца, даже если сама комбинация известна.</span></span>
+      </label>
+      <label><input type="checkbox">
+        <span><b>Пароли — в&nbsp;менеджере, а&nbsp;не&nbsp;в&nbsp;памяти и&nbsp;не&nbsp;на&nbsp;бумаге.</b>
+        <span class="why">Снимает необходимость помнить длинные разные пароли, а
+          вместе с&nbsp;ней и&nbsp;главную причину их&nbsp;повторять.</span></span>
+      </label>
+      <label><input type="checkbox">
+        <span><b>Проверка почты на&nbsp;утечки и&nbsp;смена пароля, если он&nbsp;там нашёлся.</b>
+        <span class="why">Смена в&nbsp;тот же&nbsp;день оставляет готовую пару из&nbsp;адреса и
+          пароля бесполезной; отложенная на&nbsp;недели — уже нет.</span></span>
+      </label>
+      <p class="cnt">Отмечено 0 из&nbsp;4</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С10">
+    <div class="scheme">
+      <div class="svgbox">
+        <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgt4 svgd4">
+          <title id="svgt4">Один пароль на&nbsp;все сайты связывает их&nbsp;общей уязвимостью</title>
+          <desc id="svgd4">Слева один пароль подключён к&nbsp;четырём сайтам: утечка на
+            любом открывает доступ ко&nbsp;всем. Справа у&nbsp;каждого сайта свой пароль:
+            утечка одного соседних не&nbsp;задевает.</desc>
+          <style>.ln{font-family:Inter,'Segoe UI',sans-serif}</style>
+          <text x="20" y="24" class="ln" font-size="15" font-weight="700" fill="var(--ink)">Один пароль везде</text>
+          <circle cx="70" cy="130" r="26" fill="var(--warn)"/>
+          <text x="70" y="136" text-anchor="middle" font-size="14" fill="#fff" font-weight="700">🔑</text>
+          <g stroke="var(--warn)" stroke-width="1.5">
+            <line x1="94" y1="118" x2="180" y2="60"/>
+            <line x1="94" y1="126" x2="180" y2="106"/>
+            <line x1="94" y1="134" x2="180" y2="154"/>
+            <line x1="94" y1="142" x2="180" y2="200"/>
+          </g>
+          <g fill="var(--paper2)" stroke="var(--warn)" stroke-width="1.5">
+            <rect x="180" y="46" width="90" height="28" rx="2"/>
+            <rect x="180" y="92" width="90" height="28" rx="2"/>
+            <rect x="180" y="140" width="90" height="28" rx="2"/>
+            <rect x="180" y="186" width="90" height="28" rx="2"/>
+          </g>
+          <g class="ln" font-size="11" fill="var(--warn)">
+            <text x="192" y="64">сайт-1 · взломан</text>
+            <text x="192" y="110">сайт-2 · взломан</text>
+            <text x="192" y="158">сайт-3 · взломан</text>
+            <text x="192" y="204">сайт-4 · взломан</text>
+          </g>
+          <line x1="330" y1="20" x2="330" y2="240" stroke="var(--line)" stroke-width="1"/>
+          <text x="360" y="24" class="ln" font-size="15" font-weight="700" fill="var(--ink)">Свой пароль на&nbsp;каждый</text>
+          <g>
+            <circle cx="380" cy="60" r="16" fill="var(--ok)"/>
+            <line x1="396" y1="60" x2="450" y2="60" stroke="var(--ok)" stroke-width="1.5"/>
+            <rect x="450" y="46" width="90" height="28" rx="2" fill="var(--paper2)" stroke="var(--ok)" stroke-width="1.5"/>
+            <text x="462" y="64" class="ln" font-size="11" fill="var(--ok)">сайт-1 · цел</text>
+
+            <circle cx="380" cy="106" r="16" fill="var(--warn)"/>
+            <line x1="396" y1="106" x2="450" y2="106" stroke="var(--warn)" stroke-width="1.5"/>
+            <rect x="450" y="92" width="90" height="28" rx="2" fill="var(--paper2)" stroke="var(--warn)" stroke-width="1.5"/>
+            <text x="456" y="110" class="ln" font-size="11" fill="var(--warn)">сайт-2 · взломан</text>
+
+            <circle cx="380" cy="152" r="16" fill="var(--ok)"/>
+            <line x1="396" y1="152" x2="450" y2="152" stroke="var(--ok)" stroke-width="1.5"/>
+            <rect x="450" y="138" width="90" height="28" rx="2" fill="var(--paper2)" stroke="var(--ok)" stroke-width="1.5"/>
+            <text x="462" y="156" class="ln" font-size="11" fill="var(--ok)">сайт-3 · цел</text>
+
+            <circle cx="380" cy="198" r="16" fill="var(--ok)"/>
+            <line x1="396" y1="198" x2="450" y2="198" stroke="var(--ok)" stroke-width="1.5"/>
+            <rect x="450" y="184" width="90" height="28" rx="2" fill="var(--paper2)" stroke="var(--ok)" stroke-width="1.5"/>
+            <text x="462" y="202" class="ln" font-size="11" fill="var(--ok)">сайт-4 · цел</text>
+          </g>
+        </svg>
+      </div>
+      <p class="cap"><b>Слева один пароль связан сразу с&nbsp;четырьмя сайтами: утечка
+        на&nbsp;любом открывает доступ ко&nbsp;всем.</b> Справа у&nbsp;каждого сайта свой пароль —
+        утечка одного соседних не&nbsp;задевает. По&nbsp;данным «Лаборатории Касперского»,
+        больше половины паролей из&nbsp;новых утечек встречались в&nbsp;прежних: сработал путь,
+        перекрытый справа и&nbsp;открытый слева.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С1">
+    <div class="g">
+      <div class="c5">
+        <p class="kicker">Всё вместе</p>
+        <h2>Занимает вечер, держится годами</h2>
+      </div>
+      <div class="c7">
+        <p>Четыре шага не&nbsp;отменяют друг друга, а&nbsp;закрывают разные пути входа: длина
+          пароля спасает от&nbsp;прямого перебора, второй шаг — от&nbsp;уже утёкшей пары,
+          менеджер — от&nbsp;повторения одной и&nbsp;той же&nbsp;комбинации на&nbsp;разных сайтах.
+          Настроить всё это за&nbsp;один вечер вполне реально.</p>
+        <p class="dim">Вернуться к&nbsp;<a href="proverit-parol.html">расчёту своего
+          пароля</a> или на&nbsp;<a href="index.html">главную страницу</a> сайта.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Шаги составлены по&nbsp;рекомендациям, разобранным в&nbsp;предыдущих разделах; данные об
+      утечках — «Лаборатория Касперского», 2026 год.</p>
+    <p class="src-list">Т. М. Татарникова · Д. М. Назаров · З. З. Шадманов ·
+      «Лаборатория Касперского», 2026</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

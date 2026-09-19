@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- ⛔ СОБРАННАЯ СТРАНИЦА. Правки вносить в st916_parol.src\proverit-sebya.html и пересобирать:
+     python _site_build.py out\st916_parol.src
+     Здесь base64 шрифтов и картинок — ручная правка утонет и пропадёт. -->
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проверить себя — надёжный пароль</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f6f8'/%3E%3Cpath d='M20 28v-6a12 12 0 0 1 24 0v6' fill='none' stroke='%2312141a' stroke-width='5'/%3E%3Crect x='16' y='28' width='32' height='24' rx='3' fill='%232f45cf'/%3E%3Ccircle cx='32' cy='38' r='3.5' fill='%23f5f6f8'/%3E%3Crect x='30' y='40' width='4' height='7' fill='%23f5f6f8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="проверить себя">
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="index.html">Надёжный <span>пароль</span></a>
+    <nav data-menu>
+      <a href="index.html">Главная</a>
+      <a href="kak-lomayut.html">Как это делают</a>
+      <a href="proverit-sebya.html" aria-current="page">Проверить себя</a>
+      <a href="proverit-parol.html">Проверить пароль</a>
+      <a href="chto-delat.html">Что делать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" data-hero="Э5">
+    <p class="kicker">Раздел 02</p>
+    <h1>Пять пар — какой пароль крепче</h1>
+    <p class="lead">В&nbsp;каждой паре выберите тот пароль, который дольше устоит против
+      полного перебора. Сначала отвечаете вы, разбор появляется после ответа —
+      иначе проверять нечего: зная ответ заранее, легко счесть его очевидным.</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С10">
+    <div class="scheme">
+      <div class="svgbox">
+        <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgt2 svgd2">
+          <title id="svgt2">На&nbsp;глаз пароли похожи, а&nbsp;по&nbsp;числу вариантов — нет</title>
+          <desc id="svgd2">Слева видимая сложность одинакова. Справа число вариантов
+            «Kot!2024» и&nbsp;«мурлычущийкотик»; правый столбик показан не&nbsp;в&nbsp;масштабе.</desc>
+          <text x="20" y="26" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="var(--ink)">На&nbsp;глаз — похоже</text>
+          <rect x="30" y="46" width="56" height="130" fill="var(--line)"/>
+          <rect x="120" y="46" width="56" height="130" fill="var(--line)"/>
+          <text x="20" y="196" font-family="Inter,sans-serif" font-size="11.5" fill="var(--dim)">Kot!2024</text>
+          <text x="105" y="196" font-family="Inter,sans-serif" font-size="11" fill="var(--dim)">мурлычущийкотик</text>
+          <line x1="230" y1="20" x2="230" y2="196" stroke="var(--line)" stroke-width="1"/>
+          <text x="260" y="26" font-family="Inter,sans-serif" font-size="15" font-weight="700" fill="var(--ink)">По&nbsp;числу вариантов — нет</text>
+          <rect x="270" y="168" width="56" height="8" fill="var(--warn)"/>
+          <rect x="360" y="46" width="56" height="130" fill="var(--ok)"/>
+          <text x="262" y="196" font-family="ui-monospace,Consolas,monospace" font-size="11" fill="var(--dim)">6,63×10¹⁵</text>
+          <text x="350" y="196" font-family="ui-monospace,Consolas,monospace" font-size="11" fill="var(--dim)">5,99×10²²</text>
+        </svg>
+      </div>
+      <p class="cap"><b>Глаз оценивает разнообразие знаков, а&nbsp;перебор — их
+        количество.</b> Отчего берётся разрыв: добавленный знак умножает счёт на&nbsp;весь
+        набор целиком, а&nbsp;замена внутри короткого слова умножает его&nbsp;однажды. Поэтому
+        восклицательный знак и&nbsp;цифры почти не&nbsp;меняют высоту правого столбика, а&nbsp;пятнадцать
+        лишних букв меняют её&nbsp;в&nbsp;7 миллионов раз: 6,63×10¹⁵ против 5,99×10²². На&nbsp;экран
+        такой столбик не&nbsp;поместился бы, поэтому он&nbsp;показан не&nbsp;в&nbsp;масштабе.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С5" data-tool="И1">
+      <h3>Тест: какой пароль крепче</h3>
+
+      <div class="q">
+        <p class="t">1. «Kot!2024» выглядит сложным — цифры и&nbsp;восклицательный знак.
+          Что продержится дольше?</p>
+        <div class="opts">
+          <button>Kot!2024</button>
+          <button data-ok="1">мурлычущийкотик</button>
+        </div>
+        <p class="why"><b>«мурлычущийкотик» устоит дольше.</b> У&nbsp;«Kot!2024» — 6,63×10¹⁵
+          вариантов, 8,38 часа перебора. У&nbsp;пятнадцати строчных букв «мурлычущийкотик» —
+          5,99×10²² вариантов, 8 633 года. Знак и&nbsp;цифры дают лишь постоянный
+          множитель, а&nbsp;каждая лишняя буква умножает число вариантов на&nbsp;весь алфавит.</p>
+      </div>
+
+      <div class="q">
+        <p class="t">2. «qwerty2024» — ряд соседних клавиш и&nbsp;год. Против длинной
+          фразы без цифр он&nbsp;продержится дольше?</p>
+        <div class="opts">
+          <button>qwerty2024</button>
+          <button data-ok="1">утреннийзвездопад</button>
+        </div>
+        <p class="why"><b>Меньше.</b> У&nbsp;«qwerty2024» — 3,66×10¹⁵ вариантов, 4,62 часа.
+          У&nbsp;семнадцати строчных букв «утреннийзвездопад» — 6,53×10²⁵ вариантов,
+          9,40 млн лет. Ряд соседних клавиш к&nbsp;тому же&nbsp;стоит в&nbsp;списке вероятных одним
+          из&nbsp;первых — реальный подбор ещё быстрее расчётного.</p>
+      </div>
+
+      <div class="q">
+        <p class="t">3. Имя и&nbsp;год — «Sasha1998» — узнаваемы на&nbsp;вид. Она крепче
+          длинной фразы без имени?</p>
+        <div class="opts">
+          <button>Sasha1998</button>
+          <button data-ok="1">северныйветерночью</button>
+        </div>
+        <p class="why"><b>Нет.</b> «Sasha1998» — 1,35×10¹⁶ вариантов, 17,09 часа.
+          Восемнадцать строчных букв «северныйветерночью» — 2,15×10²⁷ вариантов,
+          310 млн лет. Имя и&nbsp;год, как показано в&nbsp;разделе «Как это делают», стоят в
+          списке вероятных одними из&nbsp;первых.</p>
+      </div>
+
+      <div class="q">
+        <p class="t">4. «P@ssw0rd» — классическая замена букв знаками. Она
+          надёжнее длинной фразы без замен?</p>
+        <div class="opts">
+          <button>P@ssw0rd</button>
+          <button data-ok="1">дождливыйпонедельник</button>
+        </div>
+        <p class="why"><b>Нет.</b> У&nbsp;«P@ssw0rd» — 6,63×10¹⁵ вариантов, 8,38 часа — та
+          же&nbsp;величина, что у&nbsp;«Kot!2024»: набор символов тот же. У&nbsp;двадцати строчных
+          букв «дождливыйпонедельник» — 2,35×10³⁰ вариантов, счёт идёт на&nbsp;сотни
+          миллиардов лет. «a→@, o→0» не&nbsp;создаёт нового алфавита.</p>
+      </div>
+
+      <div class="q">
+        <p class="t">5. «AAAA2024» — восемь знаков, есть и&nbsp;буквы, и&nbsp;цифры. Она
+          надёжнее длинной фразы?</p>
+        <div class="opts">
+          <button>AAAA2024</button>
+          <button data-ok="1">серебристыйдождь</button>
+        </div>
+        <p class="why"><b>Нет, и&nbsp;разрыв здесь самый большой.</b> У&nbsp;«AAAA2024» —
+          2,82×10¹² вариантов, но&nbsp;перебор займёт 12,82 секунды: повтор одного знака
+          резко сужает список вероятных. У&nbsp;шестнадцати строчных букв «серебристыйдождь»
+          — 1,98×10²⁴ вариантов, 284 903 года.</p>
+      </div>
+
+      <p class="score">Отвечено 0 из&nbsp;5</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С1">
+    <div class="g">
+      <div class="c6">
+        <p class="kicker">Общий вывод</p>
+        <h2>Две оценки почти никогда не&nbsp;совпадают</h2>
+      </div>
+      <div class="c6">
+        <p>Глаз оценивает разнообразие знаков, а&nbsp;перебор считает количество вариантов
+          — и&nbsp;эти две оценки почти никогда не&nbsp;совпадают. Во&nbsp;всех пяти парах короткая
+          комбинация со&nbsp;знаками и&nbsp;цифрами проигрывала длинной фразе из&nbsp;одних строчных
+          букв, причём с&nbsp;разрывом в&nbsp;тысячи и&nbsp;миллионы раз.</p>
+        <p class="dim">Проверить не&nbsp;чужой пример, а&nbsp;собственную комбинацию — на
+          <a href="proverit-parol.html">странице «Проверить пароль»</a>: там тот же
+          расчёт применяется к&nbsp;вашему набору символов и&nbsp;сразу показывает результат.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Пары составлены по&nbsp;расчёту, приведённому в&nbsp;разделе «Проверить пароль»; формула и
+      источник скорости перебора — там же.</p>
+    <p class="src-list">Т. М. Татарникова · «Лаборатория Касперского», 2026</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

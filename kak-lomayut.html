@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- ⛔ СОБРАННАЯ СТРАНИЦА. Правки вносить в st916_parol.src\kak-lomayut.html и пересобирать:
+     python _site_build.py out\st916_parol.src
+     Здесь base64 шрифтов и картинок — ручная правка утонет и пропадёт. -->
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Как это делают — надёжный пароль</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f6f8'/%3E%3Cpath d='M20 28v-6a12 12 0 0 1 24 0v6' fill='none' stroke='%2312141a' stroke-width='5'/%3E%3Crect x='16' y='28' width='32' height='24' rx='3' fill='%232f45cf'/%3E%3Ccircle cx='32' cy='38' r='3.5' fill='%23f5f6f8'/%3E%3Crect x='30' y='40' width='4' height='7' fill='%23f5f6f8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="как это делают">
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="index.html">Надёжный <span>пароль</span></a>
+    <nav data-menu>
+      <a href="index.html">Главная</a>
+      <a href="kak-lomayut.html" aria-current="page">Как это делают</a>
+      <a href="proverit-sebya.html">Проверить себя</a>
+      <a href="proverit-parol.html">Проверить пароль</a>
+      <a href="chto-delat.html">Что делать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" data-hero="Э5">
+    <p class="kicker">Раздел 01</p>
+    <h1>Как подбирают пароль: три способа</h1>
+    <p class="lead">Подбор устроен не&nbsp;так, как показывают в&nbsp;кино, и&nbsp;знать это полезно
+      ровно затем, чтобы понимать, какая комбинация от&nbsp;него защищает. Способов три, и
+      действуют они на&nbsp;один и&nbsp;тот же&nbsp;пароль совершенно по-разному. Переключите способ
+      ниже и&nbsp;посмотрите, что каждый из&nbsp;них сделает с&nbsp;комбинацией «Dima2008».</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С10">
+    <div data-tool="И7">
+      <h3>Три способа подбора</h3>
+      <div class="switch">
+        <button data-k="spisok">Список вероятных</button>
+        <button data-k="utechka">Подстановка утечек</button>
+        <button data-k="perebor" class="on">Полный перебор</button>
+      </div>
+      <div class="out"><b>Полный перебор</b>Проверяет все комбинации подряд — от
+        первой до&nbsp;последней возможной. Не&nbsp;зависит от&nbsp;того, что вы&nbsp;придумали, только
+        от&nbsp;длины и&nbsp;набора знаков. Для «Dima2008» это 2,18×10¹⁴ вариантов — 16,5
+        минуты при скорости 220 миллиардов вариантов в&nbsp;секунду.</div>
+    </div>
+
+    <div class="scheme">
+      <div class="svgbox">
+        <svg viewBox="0 0 920 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgt1 svgd1">
+          <title id="svgt1">Три способа подбора одного и&nbsp;того же&nbsp;пароля «Dima2008»</title>
+          <desc id="svgd1">Полный перебор идёт по&nbsp;порядку и&nbsp;проверяет 2,18×10 в&nbsp;14 степени
+            вариантов за&nbsp;16,5 минуты. Список вероятных проверяет сначала имена, слова и
+            даты и&nbsp;находит пароль третьим по&nbsp;счёту. Подстановка утечек не&nbsp;перебирает
+            ничего — использует уже известную пару адреса и&nbsp;пароля.</desc>
+          <style>
+            .lane{opacity:.42;transition:opacity .2s}
+            .lane.on{opacity:1}
+            .ln{font-family:Inter,'Segoe UI',sans-serif}
+            .mono{font-family:ui-monospace,Consolas,monospace}
+          </style>
+          <g data-lane="perebor" class="lane on">
+            <text x="14" y="26" class="ln" font-size="16" font-weight="700" fill="var(--ink)">Полный перебор</text>
+            <rect x="14" y="42" width="60" height="30" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="20" y="61" class="mono" font-size="11" fill="var(--dim)">aaaaaaaa</text>
+            <rect x="84" y="42" width="60" height="30" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="90" y="61" class="mono" font-size="11" fill="var(--dim)">aaaaaaab</text>
+            <rect x="154" y="42" width="60" height="30" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="160" y="61" class="mono" font-size="11" fill="var(--dim)">aaaaaaac</text>
+            <text x="222" y="63" class="mono" font-size="18" fill="var(--dim)">…</text>
+            <path d="M14 96 h236" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr)"/>
+            <text x="14" y="118" class="ln" font-size="12.5" fill="var(--dim)">каждый вариант проверяется</text>
+            <text x="14" y="136" class="ln" font-size="12.5" fill="var(--dim)">своим ходом, язык не&nbsp;при чём</text>
+            <text x="14" y="168" class="mono" font-size="13" font-weight="700" fill="var(--ink)">2,18×10¹⁴ вариантов</text>
+            <text x="14" y="188" class="mono" font-size="13" font-weight="700" fill="var(--accent)">16,5 минуты</text>
+          </g>
+          <g data-lane="spisok" class="lane" transform="translate(320,0)">
+            <text x="14" y="26" class="ln" font-size="16" font-weight="700" fill="var(--ink)">Список вероятных</text>
+            <rect x="14" y="40" width="250" height="112" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="24" y="60" class="mono" font-size="12" fill="var(--dim)">1  password</text>
+            <text x="24" y="80" class="mono" font-size="12" fill="var(--dim)">2  qwerty</text>
+            <rect x="18" y="88" width="242" height="20" fill="var(--accent)" opacity=".12"/>
+            <text x="24" y="102" class="mono" font-size="12" font-weight="700" fill="var(--accent)">3  dima2008 ✓</text>
+            <text x="24" y="122" class="mono" font-size="12" fill="var(--dim)">4  football</text>
+            <text x="24" y="142" class="mono" font-size="12" fill="var(--dim)">5  …</text>
+            <text x="14" y="176" class="ln" font-size="12.5" fill="var(--dim)">проверяет сначала то, что</text>
+            <text x="14" y="194" class="ln" font-size="12.5" fill="var(--dim)">выбирают чаще всего</text>
+            <text x="14" y="222" class="mono" font-size="13" font-weight="700" fill="var(--accent)">меньше секунды</text>
+          </g>
+          <g data-lane="utechka" class="lane" transform="translate(630,0)">
+            <text x="14" y="26" class="ln" font-size="16" font-weight="700" fill="var(--ink)">Подстановка утечек</text>
+            <rect x="14" y="42" width="110" height="46" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="22" y="60" class="mono" font-size="10.5" fill="var(--dim)">почта@сайт-1</text>
+            <text x="22" y="76" class="mono" font-size="10.5" fill="var(--dim)">+ пароль</text>
+            <path d="M128 65 h34" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr)"/>
+            <rect x="166" y="42" width="98" height="46" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+            <text x="174" y="60" class="mono" font-size="10.5" fill="var(--ink)">сайт-2</text>
+            <text x="174" y="76" class="mono" font-size="10.5" font-weight="700" fill="var(--accent)">✓ подходит</text>
+            <text x="14" y="120" class="ln" font-size="12.5" fill="var(--dim)">не&nbsp;перебирает ничего —</text>
+            <text x="14" y="138" class="ln" font-size="12.5" fill="var(--dim)">пароль уже известен</text>
+            <text x="14" y="166" class="mono" font-size="13" font-weight="700" fill="var(--accent)">мгновенно</text>
+          </g>
+          <defs>
+            <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path d="M0 0 L6 3 L0 6 z" fill="var(--accent)"/>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <p class="cap"><b>Один и&nbsp;тот же&nbsp;пароль, три способа проверки.</b> Полный перебор
+        идёт по&nbsp;порядку и&nbsp;не&nbsp;замечает языка; список вероятных проверяет сначала имена,
+        слова и&nbsp;даты; подстановка утечек вообще не&nbsp;перебирает — использует уже
+        известную пару.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С1">
+    <div class="g">
+      <div class="c5">
+        <p class="kicker">Что скрыто внутри</p>
+        <h2>Пароль сравнивают не&nbsp;глазами, а&nbsp;хешем</h2>
+      </div>
+      <div class="c7">
+        <p>Пароль хранится на&nbsp;сервере не&nbsp;в&nbsp;том виде, в&nbsp;каком его набирают: при
+          регистрации комбинация превращается в&nbsp;хеш — строку постоянной длины,
+          восстановить которую напрямую нельзя. Проверка входа сводится к&nbsp;сравнению
+          хешей, а&nbsp;подбор — к&nbsp;перебору вариантов, каждый из&nbsp;которых проверяется тем же
+          способом.</p>
+        <p class="dim">Скорость перебора задаёт не&nbsp;пользователь, а&nbsp;оборудование: одна
+          современная видеокарта проверяет до&nbsp;220 миллиардов вариантов в&nbsp;секунду —
+          данные «Лаборатории Касперского» за&nbsp;2026 год.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С8">
+    <p class="kicker">Почему замена букв не&nbsp;спасает</p>
+    <p class="lead" style="max-width:52ch;font-weight:700">«Такие вариации легко
+      добавляются в&nbsp;перебираемый список и&nbsp;фактически не&nbsp;усложняют подбор»</p>
+    <p class="dim" style="margin-top:6px">— Т. М. Татарникова, 2025</p>
+    <p style="margin-top:18px">Знакомое слово с&nbsp;заменёнными буквами и&nbsp;приписанным годом
+      попадает в&nbsp;список вероятных комбинаций вместе со&nbsp;всеми своими вариациями: правило
+      замены известно заранее, а&nbsp;число замен невелико. Проверить это на&nbsp;своей
+      комбинации можно на&nbsp;соседней странице — <a href="proverit-sebya.html">пять пар
+      паролей</a> показывают, где именно обманывает внешний вид.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Раздел составлен по&nbsp;работе Т. М. Татарниковой о&nbsp;переборе парольных фраз и
+      данным «Лаборатории Касперского» за&nbsp;2026 год.</p>
+    <p class="src-list">Т. М. Татарникова · «Лаборатория Касперского», 2026</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

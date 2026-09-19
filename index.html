@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- ⛔ СОБРАННАЯ СТРАНИЦА. Правки вносить в st916_parol.src\index.html и пересобирать:
+     python _site_build.py out\st916_parol.src
+     Здесь base64 шрифтов и картинок — ручная правка утонет и пропадёт. -->
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Надёжный пароль: почему один взламывают за&nbsp;секунду, а&nbsp;другой за&nbsp;миллион лет</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f6f8'/%3E%3Cpath d='M20 28v-6a12 12 0 0 1 24 0v6' fill='none' stroke='%2312141a' stroke-width='5'/%3E%3Crect x='16' y='28' width='32' height='24' rx='3' fill='%232f45cf'/%3E%3Ccircle cx='32' cy='38' r='3.5' fill='%23f5f6f8'/%3E%3Crect x='30' y='40' width='4' height='7' fill='%23f5f6f8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<!-- САЙТ. Формат: PROMPT_сайт.md. Заказ 916 «Надёжный пароль», партия 92.
+     Источник — блок «Сайт.docx» и глава 1 файла КОМПЛЕКТ916_ПАРОЛЬ.md.
+     ⛔ ЛГ-Ж0/СТ-З3: своего опроса, анкеты и апробации на сайте нет; числа — из
+     публикаций, названных в главе 1: Татарникова · «Лаборатория Касперского» · Костарев ·
+     Назаров Д. М. · Назарова А. Д. · Стёпкин · Шадманов.
+     Страницы: П1 главная · П2 как это делают · П3 проверить себя · П4 проверить
+     пароль (главный инструмент) · П5 что делать.
+     Инструменты: И7 переключатель · И1 тест · И2 секундомер взлома (главный) · И6
+     чек-лист (четыре, минимум три).
+     Направление вида В2 «швейцарский модерн»; носитель графики — авторский SVG
+     (исключение по норме фото: тип комплекта СТИКЕРЫ, тема — числа и символы). -->
+</head>
+<body data-page="главная">
+
+<header class="top">
+  <div class="wrap in">
+    <a class="brand" href="index.html">Надёжный <span>пароль</span></a>
+    <nav data-menu>
+      <a href="index.html" aria-current="page">Главная</a>
+      <a href="kak-lomayut.html">Как это делают</a>
+      <a href="proverit-sebya.html">Проверить себя</a>
+      <a href="proverit-parol.html">Проверить пароль</a>
+      <a href="chto-delat.html">Что делать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" data-hero="Э2">
+    <p class="kicker">Тематический сайт о&nbsp;защите учётной записи</p>
+    <h1>Надёжный пароль: почему один взламывают за&nbsp;секунду, а&nbsp;другой за&nbsp;миллион лет</h1>
+    <p class="lead">Два пароля выглядят одинаково сложными, а&nbsp;держатся по-разному: один
+      перебирают за&nbsp;секунду, другой не&nbsp;переберут и&nbsp;за&nbsp;миллион лет. Разница не&nbsp;в
+      замысловатости знаков, а&nbsp;в&nbsp;числе вариантов, которые придётся перебрать. Дальше —
+      разбор трёх способов подбора, пять пар паролей на&nbsp;выбор, расчёт времени подбора
+      прямо в&nbsp;браузере и&nbsp;короткий список того, что стоит настроить сегодня.</p>
+    <div class="btns">
+      <a class="btn" href="proverit-parol.html">Проверить пароль</a>
+      <a class="btn ghost" href="kak-lomayut.html">Как это делают</a>
+    </div>
+  </section>
+
+  <section class="stat wrap" data-sec="С3">
+    <p class="kicker">Одна и&nbsp;та&nbsp;же&nbsp;длина знаков — разное время</p>
+    <h2 style="color:#fff">Разница считается, а&nbsp;не&nbsp;видна на&nbsp;глаз</h2>
+    <p style="color:#c3c8dc;max-width:56ch;margin-top:14px">Восемь букв без цифр и
+      восемнадцать букв без цифр отличаются только длиной, а&nbsp;время подбора расходится
+      в&nbsp;миллионы раз — длина и&nbsp;решает, сколько продержится пароль.</p>
+    <div class="row">
+      <div class="cell">
+        <p style="color:#9aa0b4;font-size:14px;margin-bottom:8px">8 строчных букв</p>
+        <p class="n">0,95 сек.</p>
+      </div>
+      <p class="vs">против</p>
+      <div class="cell">
+        <p style="color:#9aa0b4;font-size:14px;margin-bottom:8px">18 строчных букв</p>
+        <p class="n">4,25 млн лет</p>
+      </div>
+    </div>
+    <p class="cap">Расчёт даёт страница «Проверить пароль»: формула и&nbsp;источник скорости
+      перебора названы там же, словами и&nbsp;открыто.</p>
+  </section>
+
+  <section class="sec wrap" data-sec="С1">
+    <div class="g">
+      <div class="c5">
+        <p class="kicker">Зачем это нужно</p>
+        <h2>Сложный на&nbsp;вид — не&nbsp;значит стойкий</h2>
+      </div>
+      <div class="c7">
+        <p>Пароль обычно придумывается за&nbsp;несколько секунд и&nbsp;по&nbsp;привычному образцу:
+          знакомое слово, к&nbsp;которому приписан год. Комбинация выглядит сложной, и
+          ощущение защищённости строится именно на&nbsp;внешнем виде. На&nbsp;деле стойкость
+          определяется не&nbsp;тем, насколько замысловато выглядит набор знаков, а&nbsp;тем,
+          сколько вариантов придётся перебрать.</p>
+        <p class="dim">Чужой вход в&nbsp;учётную запись обнаруживается не&nbsp;сразу, а&nbsp;вернуть
+          переписку, фотографии и&nbsp;привязанные сервисы после него удаётся не&nbsp;всегда —
+          проще проверить пароль заранее, чем разбираться с&nbsp;этим потом.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" data-sec="С2">
+    <p class="kicker">Четыре раздела</p>
+    <h2 style="margin-bottom:22px">Куда идти дальше</h2>
+    <div class="cards">
+      <a class="card" href="kak-lomayut.html">
+        <p class="n">01</p>
+        <h3>Как это делают</h3>
+        <p>Три способа подбора на&nbsp;одном пароле.</p>
+      </a>
+      <a class="card" href="proverit-sebya.html">
+        <p class="n">02</p>
+        <h3>Проверить себя</h3>
+        <p>Пять пар паролей — какой крепче?</p>
+      </a>
+      <a class="card" href="proverit-parol.html">
+        <p class="n">03</p>
+        <h3>Проверить пароль</h3>
+        <p>Число вариантов и&nbsp;время подбора — сразу.</p>
+      </a>
+      <a class="card" href="chto-delat.html">
+        <p class="n">04</p>
+        <h3>Что делать</h3>
+        <p>Чек-лист из&nbsp;четырёх шагов со&nbsp;счётчиком.</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Сайт свёрстан на&nbsp;HTML, CSS и&nbsp;JavaScript. Материал составлен по&nbsp;публикациям,
+      названным в&nbsp;разделах; расчёт на&nbsp;странице «Проверить пароль» ведётся в&nbsp;браузере
+      посетителя и&nbsp;никуда не&nbsp;передаётся.</p>
+    <p class="src-list">Т. М. Татарникова · С. А. Костарев · Д. М. Назаров · А. Д. Назарова
+      · Б. А. Стёпкин · З. З. Шадманов · «Лаборатория Касперского», 2026</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
